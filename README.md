@@ -35,5 +35,5 @@
 - **Start the NeoVim**
 
 ```
-    nvim
+  nvim
 ```
