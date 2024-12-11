@@ -16,8 +16,21 @@ for type, icon in pairs(signs) do
 end
 
 -- Language server configurations
-lspconfig.gopls.setup({})
-lspconfig.tsserver.setup({})
-lspconfig.pyright.setup({})
-lspconfig.cssls.setup({})
-lspconfig.html.setup({})
+lspconfig.gopls.setup({
+  autostart = true,
+})
+lspconfig.tailwindcss.setup({
+  autostart = true,
+})
+lspconfig.tsserver.setup({
+  autostart = true,
+})
+lspconfig.pyright.setup({
+  autostart = true,
+})
+lspconfig.cssls.setup({
+  autostart = true,
+})
+lspconfig.html.setup({
+  autostart = true,
+})
