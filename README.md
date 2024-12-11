@@ -29,19 +29,11 @@
 - **Remove the .git folder**
 
   ```
-    rm -rf ~/.config/nvim/.git
+   rm -rf ~/.config/nvim/.git
   ```
 
 - **Start the NeoVim**
 
 ```
     nvim
-```
-
-```
-
-```
-
-```
-
 ```
