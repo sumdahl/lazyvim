@@ -22,7 +22,7 @@
 - **Clone this repo**:
 
   ```
-  git clone https://github.com/sumdahl/lazyvim ~/.config/nvim`
+  git clone https://github.com/sumdahl/lazyvim ~/.config/nvim
 
   ```
 
