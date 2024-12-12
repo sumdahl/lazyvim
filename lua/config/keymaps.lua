@@ -14,3 +14,28 @@ vim.api.nvim_set_keymap(
 
 -- Toggle Trouble with <leader>xx
 vim.api.nvim_set_keymap("n", "<leader>xx", "<cmd>TroubleToggle<cr>", { noremap = true, silent = true })
+
+-- Import nvim-cmp safely
+local cmp = require("cmp")
+
+-- Add Tab and Shift-Tab for completion navigation
+cmp.setup({
+  mapping = {
+    ["<Tab>"] = cmp.mapping(function(fallback)
+      if cmp.visible() then
+        cmp.select_next_item()
+      else
+        fallback()
+      end
+    end, { "i", "s" }),
+    ["<S-Tab>"] = cmp.mapping(function(fallback)
+      if cmp.visible() then
+        cmp.select_prev_item()
+      else
+        fallback()
+      end
+    end, { "i", "s" }),
+    ["<CR>"] = cmp.mapping.confirm({ select = true }), -- Confirm selection
+    ["<C-e>"] = cmp.mapping.abort(), -- Abort completion
+  },
+})
